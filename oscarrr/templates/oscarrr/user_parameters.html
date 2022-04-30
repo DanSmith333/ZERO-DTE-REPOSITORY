@@ -1,0 +1,33 @@
+{% extends "landing_page/base.html" %}
+
+{% block content %}
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10">
+            <h1>User Parameters</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10">
+        {% if parameters %}
+            <div class="list-group">
+                {% for parameter in parameters %}
+
+                    <a href="{% url 'user_parameters'  %}" class="list-group-item list-group-item-action">
+                        <b>{{ oscarrr.symbol }}</b>
+                        <b>{{ oscarrr.symbol }}</b>
+                        well
+                    </a>
+
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="text-center">
+                <h2>Looks like you don't have any parameters!</h2>
+            <br>
+
+        
+        </div>
+        {% endif %}
+        </div>
+    </div>
+{% endblock %}

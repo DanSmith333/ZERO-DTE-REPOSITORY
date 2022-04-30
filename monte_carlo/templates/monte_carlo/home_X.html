@@ -1,0 +1,45 @@
+
+<!--
+{% extends "landing_page/base.html" %}
+-->
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {text-align: center;}
+h3 {text-align: center;}
+body {
+  font-family: Helvetica, sans-serif;
+}
+</style>
+</head>
+
+
+
+<body>
+
+
+<div>
+  
+  <h2>Monte Carlo Simulation  zz</h2>
+
+  <form method="post" value='say_hi'   >
+     {% csrf_token %}
+    <button class="btn btn-danger btn-round">Run Simulation</button>
+
+</form>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+{% endblock %}

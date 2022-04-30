@@ -1,0 +1,21 @@
+{% extends "landing_page/base.html" %}
+{% block content %}
+<h1>GRADITUDOR</h1>
+
+I appreciate that I am not :
+
+{% for situation in situations %}   
+
+    {% for annoyance in annoyances %}   
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;{{ situation }} being forced to {{ annoyance }}<p>
+    {% endfor %} 
+
+
+{% endfor %} 
+
+{% endblock%}
+
+
+
+
+The end

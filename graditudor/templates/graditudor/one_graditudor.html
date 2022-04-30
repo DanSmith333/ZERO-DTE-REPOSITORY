@@ -1,0 +1,26 @@
+{% extends "landing_page/base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {text-align: center;}
+h3 {text-align: center;}
+body {
+  font-family: Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+<h2>GRADITUDOR</h2>
+
+<div class="container text-center">
+<h3>I appreciate that I am not {{ situation }}</h3>
+<h3>being forced to {{ annoyance }}.</h3>
+
+</div>
+<a class="btn btn-primary" href="{{ request.get_full_path }}">Next</a>
+</body>
+</html>
+
+{% endblock %}
